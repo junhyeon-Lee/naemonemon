@@ -1,16 +1,9 @@
 # NAEMO NEMON
 
-쇼핑몰 url기반의 사용자 장바구니, 투표 어플리케이션
+쇼핑몰 url 기반의 사용자 장바구니, 투표 어플리케이션
 
-## Getting Started
+## 특이사항
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 쇼핑몰 url을 앱에 추가하면 스크래핑을 통해 url의 정보를 추출해 장바구니에 추가한다.
+- url은 직접입력, 외부 앱에서 앱내부로 공유, 앱 내부 브라우저(인앱웹뷰)를 통해 추가한다.
+- toast, push, social login, share등 앱에 필수적으로 필요한 기능들 구현
