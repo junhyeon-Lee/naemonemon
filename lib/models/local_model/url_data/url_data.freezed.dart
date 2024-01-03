@@ -20,11 +20,16 @@ UrlData _$UrlDataFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$UrlData {
-  String get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
+  int? get userID => throw _privateConstructorUsedError;
+  String get localId => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
   String? get image => throw _privateConstructorUsedError;
   String? get title => throw _privateConstructorUsedError;
   List<String> get group => throw _privateConstructorUsedError;
+  int? get isDeleted => throw _privateConstructorUsedError;
+  String? get createdAt => throw _privateConstructorUsedError;
+  String? get updatedAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37,11 +42,16 @@ abstract class $UrlDataCopyWith<$Res> {
       _$UrlDataCopyWithImpl<$Res, UrlData>;
   @useResult
   $Res call(
-      {String id,
+      {int? id,
+      int? userID,
+      String localId,
       String url,
       String? image,
       String? title,
-      List<String> group});
+      List<String> group,
+      int? isDeleted,
+      String? createdAt,
+      String? updatedAt});
 }
 
 /// @nodoc
@@ -57,16 +67,29 @@ class _$UrlDataCopyWithImpl<$Res, $Val extends UrlData>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
+    Object? id = freezed,
+    Object? userID = freezed,
+    Object? localId = null,
     Object? url = null,
     Object? image = freezed,
     Object? title = freezed,
     Object? group = null,
+    Object? isDeleted = freezed,
+    Object? createdAt = freezed,
+    Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: null == id
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      userID: freezed == userID
+          ? _value.userID
+          : userID // ignore: cast_nullable_to_non_nullable
+              as int?,
+      localId: null == localId
+          ? _value.localId
+          : localId // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
           ? _value.url
@@ -84,6 +107,18 @@ class _$UrlDataCopyWithImpl<$Res, $Val extends UrlData>
           ? _value.group
           : group // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      isDeleted: freezed == isDeleted
+          ? _value.isDeleted
+          : isDeleted // ignore: cast_nullable_to_non_nullable
+              as int?,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      updatedAt: freezed == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -96,11 +131,16 @@ abstract class _$$_UrlDataCopyWith<$Res> implements $UrlDataCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String id,
+      {int? id,
+      int? userID,
+      String localId,
       String url,
       String? image,
       String? title,
-      List<String> group});
+      List<String> group,
+      int? isDeleted,
+      String? createdAt,
+      String? updatedAt});
 }
 
 /// @nodoc
@@ -113,16 +153,29 @@ class __$$_UrlDataCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
+    Object? id = freezed,
+    Object? userID = freezed,
+    Object? localId = null,
     Object? url = null,
     Object? image = freezed,
     Object? title = freezed,
     Object? group = null,
+    Object? isDeleted = freezed,
+    Object? createdAt = freezed,
+    Object? updatedAt = freezed,
   }) {
     return _then(_$_UrlData(
-      id: null == id
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      userID: freezed == userID
+          ? _value.userID
+          : userID // ignore: cast_nullable_to_non_nullable
+              as int?,
+      localId: null == localId
+          ? _value.localId
+          : localId // ignore: cast_nullable_to_non_nullable
               as String,
       url: null == url
           ? _value.url
@@ -140,6 +193,18 @@ class __$$_UrlDataCopyWithImpl<$Res>
           ? _value._group
           : group // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      isDeleted: freezed == isDeleted
+          ? _value.isDeleted
+          : isDeleted // ignore: cast_nullable_to_non_nullable
+              as int?,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      updatedAt: freezed == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -148,18 +213,27 @@ class __$$_UrlDataCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_UrlData implements _UrlData {
   _$_UrlData(
-      {required this.id,
+      {this.id,
+      this.userID,
+      required this.localId,
       required this.url,
       this.image,
       this.title,
-      required final List<String> group})
+      required final List<String> group,
+      this.isDeleted,
+      this.createdAt,
+      this.updatedAt})
       : _group = group;
 
   factory _$_UrlData.fromJson(Map<String, dynamic> json) =>
       _$$_UrlDataFromJson(json);
 
   @override
-  final String id;
+  final int? id;
+  @override
+  final int? userID;
+  @override
+  final String localId;
   @override
   final String url;
   @override
@@ -175,8 +249,15 @@ class _$_UrlData implements _UrlData {
   }
 
   @override
+  final int? isDeleted;
+  @override
+  final String? createdAt;
+  @override
+  final String? updatedAt;
+
+  @override
   String toString() {
-    return 'UrlData(id: $id, url: $url, image: $image, title: $title, group: $group)';
+    return 'UrlData(id: $id, userID: $userID, localId: $localId, url: $url, image: $image, title: $title, group: $group, isDeleted: $isDeleted, createdAt: $createdAt, updatedAt: $updatedAt)';
   }
 
   @override
@@ -185,16 +266,34 @@ class _$_UrlData implements _UrlData {
         (other.runtimeType == runtimeType &&
             other is _$_UrlData &&
             (identical(other.id, id) || other.id == id) &&
+            (identical(other.userID, userID) || other.userID == userID) &&
+            (identical(other.localId, localId) || other.localId == localId) &&
             (identical(other.url, url) || other.url == url) &&
             (identical(other.image, image) || other.image == image) &&
             (identical(other.title, title) || other.title == title) &&
-            const DeepCollectionEquality().equals(other._group, _group));
+            const DeepCollectionEquality().equals(other._group, _group) &&
+            (identical(other.isDeleted, isDeleted) ||
+                other.isDeleted == isDeleted) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, url, image, title,
-      const DeepCollectionEquality().hash(_group));
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      userID,
+      localId,
+      url,
+      image,
+      title,
+      const DeepCollectionEquality().hash(_group),
+      isDeleted,
+      createdAt,
+      updatedAt);
 
   @JsonKey(ignore: true)
   @override
@@ -212,16 +311,25 @@ class _$_UrlData implements _UrlData {
 
 abstract class _UrlData implements UrlData {
   factory _UrlData(
-      {required final String id,
+      {final int? id,
+      final int? userID,
+      required final String localId,
       required final String url,
       final String? image,
       final String? title,
-      required final List<String> group}) = _$_UrlData;
+      required final List<String> group,
+      final int? isDeleted,
+      final String? createdAt,
+      final String? updatedAt}) = _$_UrlData;
 
   factory _UrlData.fromJson(Map<String, dynamic> json) = _$_UrlData.fromJson;
 
   @override
-  String get id;
+  int? get id;
+  @override
+  int? get userID;
+  @override
+  String get localId;
   @override
   String get url;
   @override
@@ -230,6 +338,12 @@ abstract class _UrlData implements UrlData {
   String? get title;
   @override
   List<String> get group;
+  @override
+  int? get isDeleted;
+  @override
+  String? get createdAt;
+  @override
+  String? get updatedAt;
   @override
   @JsonKey(ignore: true)
   _$$_UrlDataCopyWith<_$_UrlData> get copyWith =>

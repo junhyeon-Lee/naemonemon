@@ -20,10 +20,14 @@ Group _$GroupFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Group {
+  int? get id => throw _privateConstructorUsedError;
+  String get localId => throw _privateConstructorUsedError;
   String get groupName => throw _privateConstructorUsedError;
-  String get groupId => throw _privateConstructorUsedError;
   int get groupColorId => throw _privateConstructorUsedError;
   int get groupIconId => throw _privateConstructorUsedError;
+  int? get isDeleted => throw _privateConstructorUsedError;
+  String? get createdAt => throw _privateConstructorUsedError;
+  String? get updatedAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -36,7 +40,14 @@ abstract class $GroupCopyWith<$Res> {
       _$GroupCopyWithImpl<$Res, Group>;
   @useResult
   $Res call(
-      {String groupName, String groupId, int groupColorId, int groupIconId});
+      {int? id,
+      String localId,
+      String groupName,
+      int groupColorId,
+      int groupIconId,
+      int? isDeleted,
+      String? createdAt,
+      String? updatedAt});
 }
 
 /// @nodoc
@@ -52,19 +63,27 @@ class _$GroupCopyWithImpl<$Res, $Val extends Group>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? id = freezed,
+    Object? localId = null,
     Object? groupName = null,
-    Object? groupId = null,
     Object? groupColorId = null,
     Object? groupIconId = null,
+    Object? isDeleted = freezed,
+    Object? createdAt = freezed,
+    Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      localId: null == localId
+          ? _value.localId
+          : localId // ignore: cast_nullable_to_non_nullable
+              as String,
       groupName: null == groupName
           ? _value.groupName
           : groupName // ignore: cast_nullable_to_non_nullable
-              as String,
-      groupId: null == groupId
-          ? _value.groupId
-          : groupId // ignore: cast_nullable_to_non_nullable
               as String,
       groupColorId: null == groupColorId
           ? _value.groupColorId
@@ -74,6 +93,18 @@ class _$GroupCopyWithImpl<$Res, $Val extends Group>
           ? _value.groupIconId
           : groupIconId // ignore: cast_nullable_to_non_nullable
               as int,
+      isDeleted: freezed == isDeleted
+          ? _value.isDeleted
+          : isDeleted // ignore: cast_nullable_to_non_nullable
+              as int?,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      updatedAt: freezed == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -85,7 +116,14 @@ abstract class _$$_GroupCopyWith<$Res> implements $GroupCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String groupName, String groupId, int groupColorId, int groupIconId});
+      {int? id,
+      String localId,
+      String groupName,
+      int groupColorId,
+      int groupIconId,
+      int? isDeleted,
+      String? createdAt,
+      String? updatedAt});
 }
 
 /// @nodoc
@@ -97,19 +135,27 @@ class __$$_GroupCopyWithImpl<$Res> extends _$GroupCopyWithImpl<$Res, _$_Group>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? id = freezed,
+    Object? localId = null,
     Object? groupName = null,
-    Object? groupId = null,
     Object? groupColorId = null,
     Object? groupIconId = null,
+    Object? isDeleted = freezed,
+    Object? createdAt = freezed,
+    Object? updatedAt = freezed,
   }) {
     return _then(_$_Group(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      localId: null == localId
+          ? _value.localId
+          : localId // ignore: cast_nullable_to_non_nullable
+              as String,
       groupName: null == groupName
           ? _value.groupName
           : groupName // ignore: cast_nullable_to_non_nullable
-              as String,
-      groupId: null == groupId
-          ? _value.groupId
-          : groupId // ignore: cast_nullable_to_non_nullable
               as String,
       groupColorId: null == groupColorId
           ? _value.groupColorId
@@ -119,6 +165,18 @@ class __$$_GroupCopyWithImpl<$Res> extends _$GroupCopyWithImpl<$Res, _$_Group>
           ? _value.groupIconId
           : groupIconId // ignore: cast_nullable_to_non_nullable
               as int,
+      isDeleted: freezed == isDeleted
+          ? _value.isDeleted
+          : isDeleted // ignore: cast_nullable_to_non_nullable
+              as int?,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      updatedAt: freezed == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -127,26 +185,38 @@ class __$$_GroupCopyWithImpl<$Res> extends _$GroupCopyWithImpl<$Res, _$_Group>
 @JsonSerializable()
 class _$_Group implements _Group {
   _$_Group(
-      {required this.groupName,
-      required this.groupId,
+      {this.id,
+      required this.localId,
+      required this.groupName,
       required this.groupColorId,
-      required this.groupIconId});
+      required this.groupIconId,
+      this.isDeleted,
+      this.createdAt,
+      this.updatedAt});
 
   factory _$_Group.fromJson(Map<String, dynamic> json) =>
       _$$_GroupFromJson(json);
 
   @override
-  final String groupName;
+  final int? id;
   @override
-  final String groupId;
+  final String localId;
+  @override
+  final String groupName;
   @override
   final int groupColorId;
   @override
   final int groupIconId;
+  @override
+  final int? isDeleted;
+  @override
+  final String? createdAt;
+  @override
+  final String? updatedAt;
 
   @override
   String toString() {
-    return 'Group(groupName: $groupName, groupId: $groupId, groupColorId: $groupColorId, groupIconId: $groupIconId)';
+    return 'Group(id: $id, localId: $localId, groupName: $groupName, groupColorId: $groupColorId, groupIconId: $groupIconId, isDeleted: $isDeleted, createdAt: $createdAt, updatedAt: $updatedAt)';
   }
 
   @override
@@ -154,19 +224,26 @@ class _$_Group implements _Group {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Group &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.localId, localId) || other.localId == localId) &&
             (identical(other.groupName, groupName) ||
                 other.groupName == groupName) &&
-            (identical(other.groupId, groupId) || other.groupId == groupId) &&
             (identical(other.groupColorId, groupColorId) ||
                 other.groupColorId == groupColorId) &&
             (identical(other.groupIconId, groupIconId) ||
-                other.groupIconId == groupIconId));
+                other.groupIconId == groupIconId) &&
+            (identical(other.isDeleted, isDeleted) ||
+                other.isDeleted == isDeleted) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, groupName, groupId, groupColorId, groupIconId);
+  int get hashCode => Object.hash(runtimeType, id, localId, groupName,
+      groupColorId, groupIconId, isDeleted, createdAt, updatedAt);
 
   @JsonKey(ignore: true)
   @override
@@ -184,21 +261,33 @@ class _$_Group implements _Group {
 
 abstract class _Group implements Group {
   factory _Group(
-      {required final String groupName,
-      required final String groupId,
+      {final int? id,
+      required final String localId,
+      required final String groupName,
       required final int groupColorId,
-      required final int groupIconId}) = _$_Group;
+      required final int groupIconId,
+      final int? isDeleted,
+      final String? createdAt,
+      final String? updatedAt}) = _$_Group;
 
   factory _Group.fromJson(Map<String, dynamic> json) = _$_Group.fromJson;
 
   @override
-  String get groupName;
+  int? get id;
   @override
-  String get groupId;
+  String get localId;
+  @override
+  String get groupName;
   @override
   int get groupColorId;
   @override
   int get groupIconId;
+  @override
+  int? get isDeleted;
+  @override
+  String? get createdAt;
+  @override
+  String? get updatedAt;
   @override
   @JsonKey(ignore: true)
   _$$_GroupCopyWith<_$_Group> get copyWith =>

@@ -166,4 +166,21 @@ class GColor {
     const Color(0xffFF7B89),
     const Color(0xffA5CAD2)
   ];
+
+  Color itemColor(int colorIndex, int index) {
+    return GColor.fColorList[(colorIndex + index ~/ 5) % (GColor.fColorList.length - 1)][index % 5];
+  }
+
+
+  ///menu Color
+  static List<Color> menuGColorList = [
+    const Color(0xff292D32),
+    const Color(0xffF3BED4),
+    const Color(0xff86E3CE),
+    const Color(0xffD0E6A5),
+    const Color(0xffFFDD95),
+    const Color(0xffFA897B),
+
+    basic[0]
+  ];
 }

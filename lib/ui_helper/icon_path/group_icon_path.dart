@@ -17,6 +17,7 @@ class GIconPath {
   ];
 
   static const String allItems ='${gIconsPath}all_items.svg';
+  static const String more ='${gIconsPath}more.svg';
 
   static const String star ='${gIconsPath}Star.svg';
   static const String heart ='${gIconsPath}Heart.svg';
@@ -71,4 +72,18 @@ class GIconPath {
   static const String leaves ='${gIconsPath}Leaves.svg';
   static const String gem ='${gIconsPath}Gem.svg';
   static const String season ='${gIconsPath}Season.svg';
+
+  ///menu
+  ///
+  static List<String> menuIconList = [
+    feed,kipping, myPoll, special, taste, aOrb, selectRoom
+  ];
+  ///
+  static const String feed ='${gIconsPath}feed.svg';
+  static const String myPoll ='${gIconsPath}myPoll.svg';
+  static const String special ='${gIconsPath}special.svg';
+  static const String taste ='${gIconsPath}taste.svg';
+  static const String aOrb ='${gIconsPath}aOrb.svg';
+  static const String selectRoom ='${gIconsPath}selectRoom.svg';
+  static const String kipping = '${gIconsPath}shopping-bag.svg';
 }

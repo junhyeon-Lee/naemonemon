@@ -7,6 +7,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:649354721699:android:91c41bf61e82ea68de4216",
+        "android_client_info": {
+          "package_name": "com.app.naemonemon.name"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649354721699-fcescm8lomehg9dfpc223bu9skph1eqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.naemonemon.name",
+            "certificate_hash": "821aad5300c63aef5bd24ee91b3e6646c5a2a48e"
+          }
+        },
+        {
+          "client_id": "649354721699-3406lv2l3h1lgrl63m817spg4nlolg0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGotXD4xY2BRXwpiF3a5jzvt3lHpB41Xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649354721699-3406lv2l3h1lgrl63m817spg4nlolg0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:649354721699:android:4dd99ffdec3b46e0de4216",
         "android_client_info": {
           "package_name": "com.example.shovving_pre"
@@ -18,6 +55,43 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.shovving_pre",
+            "certificate_hash": "821aad5300c63aef5bd24ee91b3e6646c5a2a48e"
+          }
+        },
+        {
+          "client_id": "649354721699-3406lv2l3h1lgrl63m817spg4nlolg0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGotXD4xY2BRXwpiF3a5jzvt3lHpB41Xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649354721699-3406lv2l3h1lgrl63m817spg4nlolg0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649354721699:android:22204aa5471043bade4216",
+        "android_client_info": {
+          "package_name": "com.naemo.nemon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649354721699-4vmvef0o2c5l8ul54p7so1aprno1rm9t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naemo.nemon",
             "certificate_hash": "821aad5300c63aef5bd24ee91b3e6646c5a2a48e"
           }
         },

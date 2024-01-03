@@ -7,16 +7,17 @@ class CustomTheme {
   static ThemeData get mainTheme {
     return ThemeData(
       primaryColor: CColor.lightGray,
-      scaffoldBackgroundColor: CColor.darkGray,
+      scaffoldBackgroundColor: Colors.white,
       fontFamily: 'Spoqa',
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         selectedItemColor: CColor.primary,
         unselectedItemColor: CColor.gray,
       ),
-      appBarTheme: AppBarTheme(
-        backgroundColor: CColor.darkGray,
-        systemOverlayStyle: const SystemUiOverlayStyle(
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.white,
+        systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.dark
         ),
         elevation: 0,
       ),

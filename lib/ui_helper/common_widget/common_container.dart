@@ -15,7 +15,7 @@ class CommonContainer extends Container {
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(radius??12),
       color: containerColor ?? CColor.lightGray,
-      border: Border.all(color: borderColor ?? Colors.transparent, width: borderWidth??1),
+      border: Border.all(color: borderColor ?? containerColor ?? CColor.lightGray, width: borderWidth??1),
     ),
   );
 }
