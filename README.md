@@ -1,6 +1,6 @@
 # NAEMO NEMON
 
-A new Flutter project.
+쇼핑몰 url기반의 사용자 장바구니, 투표 어플리케이션
 
 ## Getting Started
 
